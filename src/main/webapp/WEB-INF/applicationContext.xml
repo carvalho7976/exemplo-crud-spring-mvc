@@ -15,12 +15,13 @@
 	<context:component-scan base-package="npi.contatos.service" />
 	
 	<!-- Define a conexão com a base de dados mapeada através do jndi configurado no tomcat -->
-	<bean id="contatos" class="org.springframework.jndi.JndiObjectFactoryBean">
-		<property name="jndiName" value="java:comp/env/contatos" />
-	</bean>
+	
 	<bean id="emf" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="persistenceUnitName" value="dev" />
 		<property name="dataSource" ref="contatos" />
+	</bean>
+	<bean id="contatos" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="java:comp/env/contatos" />
 	</bean>
 	
 	<bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">

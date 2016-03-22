@@ -30,7 +30,12 @@ public class ContatoRepositoryImpl implements ContatoRepository {
 	@Override
 	@Transactional
 	public void salvar(Contato contato) {
-		em.persist(contato);
+		if(contato.getId() != null){
+			em.merge(contato);
+		}else{
+			em.persist(contato);
+		}
+		
 	}
 
 	@Override

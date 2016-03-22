@@ -20,7 +20,7 @@
 	<context:component-scan base-package="npi.contatos.controller" />
 	
 	<!-- Define pagina inicial (ingnora a configuração do web.xml)-->
-	<mvc:view-controller path="/contato/listar"/>
+	<mvc:view-controller path="/contato/listar"/> 
 	
 	<!-- Define onde está localizada as views da aplicação, e qual a extenção das mesmas -->
 	<!-- Estão configuradas dentro da WEB-INF para que o usuário não possa acessalas, se não por meio do mapeamento-->
