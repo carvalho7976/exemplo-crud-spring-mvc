@@ -1,13 +1,24 @@
+<<<<<<< HEAD
 # End-of-line normalization should not be attempted for text files
 * -text
+=======
+# Autodetect text files
+* text=auto
+>>>>>>> 2b076de6bf70b537d8698218d7aac1a6fb8746a9
 
 # Definitively text files 
 *.xml text
 *.java text
 *.properties text
+<<<<<<< HEAD
 *.xhtml text
 *.jsp text
 *.jsf text
+=======
+*.xhtml
+*.jsp
+*.jsf
+>>>>>>> 2b076de6bf70b537d8698218d7aac1a6fb8746a9
 *.txt text
 *.c text
 *.h text
@@ -15,6 +26,7 @@
 # Ensure those won't be messed up with
 *.jpg binary
 *.png binary
+<<<<<<< HEAD
 *.doc binary
 *.docx binary
 *.odt binary
@@ -26,3 +38,5 @@
 *.odp binary
 *.pdf binary
 *.asta binary
+=======
+>>>>>>> 2b076de6bf70b537d8698218d7aac1a6fb8746a9

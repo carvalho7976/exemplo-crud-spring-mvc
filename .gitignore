@@ -2,10 +2,18 @@
 .settings
 .classpath
 .project
+<<<<<<< HEAD
 /target
+=======
+target
+>>>>>>> 2b076de6bf70b537d8698218d7aac1a6fb8746a9
 *.class
 *.jar
 *.war
 *.ear
 *.log
+<<<<<<< HEAD
 *.project
+=======
+.DS_Store
+>>>>>>> 2b076de6bf70b537d8698218d7aac1a6fb8746a9

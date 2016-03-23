@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
+
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:mvc="http://www.springframework.org/schema/mvc"
 	xmlns:cache="http://www.springframework.org/schema/cache"
@@ -33,8 +34,10 @@
 		</property>
 	</bean>
 
+
 	<!-- define o mapeamento dos recursos, como css, js, imagens, etc -->
 	<mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/" />
 	<mvc:resources mapping="/resources/**" location="/resources/" />
+	<mvc:annotation-driven />
 
 </beans>
